@@ -44,24 +44,46 @@
   				</div>
   			</nav>
   		</div>
-  		<div id="content">
-  			<div id="previewWindow">
+  		<div id="content" class="row">
+  			<div id="previewWindow" class="col-xs-12 col-md-6" class="previewWindow" class="project_window">
   			</div>
-  			<div id="selectors">
-  			</div>
+  			<div id="selectors" class="col-xs-12 col-md-6" class="selectors" class="project_window">
+  				<div id="red" class="radio">
+				  <label>
+				    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+				    Red
+				  </label>
+				</div>
+				<div id="blue" class="radio">
+				  <label>
+				    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+				    OBlue
+				  </label>
+				</div>
+				<div id="green" class="radio disabled">
+				  <label>
+				    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+				    Green
+				  </label>
+				</div>
+			</div>
+  		</div>
   			<div class="container">
 
   				<div class="starter-template">
   					<h1>Tile Previewer</h1>
   					<p class="lead"> Seabreeze Ceramics is a small, family run business specialising in personalised ceramic gifts and unique paw print tiles of your pets.</p>
+  					<p id="p1"> <button>Click me</button></p>
   				</div>
 
   			</div><!-- /.container -->
   		</div>
   	</div>
+  	
   	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   	<!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="previewer.js"></script>
   </body>
 </html>

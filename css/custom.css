@@ -5,3 +5,43 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+.previewWindow{
+	  padding: 40px 15px;
+  text-align: left;
+}
+
+.selectors{
+	 padding: 10px 10px;
+	 text-align: right;
+}
+
+#content{
+  margin-top: 40px;
+}
+
+#project_row_left{
+  max-width:600px;
+  min-width: 300px;
+  margin: 0px auto;
+  float: left;
+}
+
+#project_row_right{
+  max-width:600px; 
+  min-width: 300px;
+  margin: 0px auto;
+  float: right;
+
+}
+
+.project_window{
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  margin-left: 0px;
+}
+
+#imgBlurred{
+	filter: blur(200px);
+}
