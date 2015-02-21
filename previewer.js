@@ -21,4 +21,13 @@ $(document).ready(function(){
     $("#textBrown").click(function(){
          $("#textForeground").html($("<img>").attr("src", "./images/text_brown.png").attr("class","overlay")); 
     });
+    $("#framePine").click(function(){
+         $("#frameForeground").html($("<img>").attr("src", "./images/frame_pine_500.png").attr("class","overlay")); 
+    });
+    $("#frameBlack").click(function(){
+         $("#frameForeground").html($("<img>").attr("src", "./images/frame_black_500.png").attr("class","overlay")); 
+    });
+    $("#frameWhite").click(function(){
+         $("#frameForeground").html($("<img>").attr("src", "./images/frame_white_500.png").attr("class","overlay")); 
+    });
 });

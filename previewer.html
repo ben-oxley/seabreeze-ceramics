@@ -37,8 +37,8 @@
          <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
            <li class="active"><a href="#">Home</a></li>
-           <li><a href="#about">About</a></li>
-           <li><a href="#contact">Contact</a></li>
+           <li><a href="#previewer">Tile Previewer</a></li>
+           <li><a href="#gallery">Gallery</a></li>
          </ul>
        </div><!--/.nav-collapse -->
      </div>
@@ -53,29 +53,32 @@
     </div>
 
     <div id="previewBox">
+      <a name="previewer"></a>
     <div id="previewWindow" class="col-xs-12 col-md-6" class="previewWindow" class="project_window">
-      <div id="pawForeground" ></div>
-      <div id="textForeground" ></div>
+      <div id="frameForeground"><img src="./images/frame_white_500.png" class="overlay"></div>
+      <div id="pawForeground" ><img src="./images/paw_brown.png" class="overlay"></div>
+      <div id="textForeground" ><img src="./images/text_blue.png" class="overlay"></div>
               <!--<img id="pawForeground" class="overlay" src="./images/paw_blue.png"/>
               <img id="station_B" class="overlay" src="./images/paw_red.png"/>-->
-              <img id="tileBackground" class="previewImages" src="./images/tile_background.png"/>
-            </div>
+
+      <img id="tileBackground" class="previewImages" src="./images/tile_background.png"/>
+    </div>
             <div id="selectors" class="col-xs-12 col-md-6" class="selectors" class="project_window">
              <div id="pawBrown" class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                <input type="radio" name="pawRadios" id="optionsRadios1" value="brown" checked>
                 Brown Paw
               </label>
             </div>
             <div id="pawCream" class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                <input type="radio" name="pawRadios" id="optionsRadios2" value="cream">
                 Cream Paw
               </label>
             </div>
             <div id="pawGrey" class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                <input type="radio" name="pawRadios" id="optionsRadios3" value="grey">
                 Grey Paw
               </label>
             </div>
@@ -83,32 +86,99 @@
           <div id="selectors" class="col-xs-12 col-md-6" class="selectors" class="project_window">
             <div id="textGrey" class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                <input type="radio" name="textRadios" id="optionsRadios3" value="grey">
                 Grey Text
               </label>
             </div>
             <div id="textBrown" class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                <input type="radio" name="textRadios" id="optionsRadios3" value="brown">
                 Brown Text
               </label>
             </div>
             <div id="textBlue" class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                <input type="radio" name="textRadios" id="optionsRadios3" value="blue" checked>
                 Blue Text
               </label>
             </div>
             <div id="textLilac" class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                <input type="radio" name="textRadios" id="optionsRadios3" value="lilac">
                 Lilac Text
               </label>
             </div>
           </div>
+          <div id="selectors" class="col-xs-12 col-md-6" class="selectors" class="project_window">
+            <div id="framePine" class="radio">
+              <label>
+                <input type="radio" name="frameRadios" id="optionsRadios3" value="natural">
+                Natural Frame
+              </label>
+            </div>
+            <div id="frameBlack" class="radio">
+              <label>
+                <input type="radio" name="frameRadios" id="optionsRadios3" value="black">
+                Black Frame
+              </label>
+            </div>
+            <div id="frameWhite" class="radio">
+              <label>
+                <input type="radio" name="frameRadios" id="optionsRadios3" value="white" checked>
+                White Frame
+              </label>
+            </div>
+          </div>
         </div>
+
+
+
       </div><!-- /.container -->
 
+      </div>
+<div class="container">
+  <br>
+  <a name="gallery"></a>
+      <h1>Gallery</h1>
+      <p class="lead"> Seabreeze Ceramics is a small, family run business specialising in personalised ceramic gifts and unique paw print tiles of your pets.</p>
+    </div>
+      <div class="container">     
+        <div class="row">
+          <div class="col-md-4">
+            <a href="./gallery/paw_brown_text_green.jpg" class="thumbnail">
+              <!--<p>Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.</p>    -->
+              <img src="./gallery/paw_brown_text_green.jpg" alt="" style="height:150px;">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="./gallery/paw_cream_text_blue.jpg" class="thumbnail">
+              <img src="./gallery/paw_cream_text_blue.jpg" alt="" style="height:150px;">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="./gallery/paw_cream_text_lilac.jpg" class="thumbnail">   
+              <img src="./gallery/paw_cream_text_lilac.jpg" alt="" style="height:150px;">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="./gallery/paw_grey_text_pink.jpg" class="thumbnail">
+              <!--<p>Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.</p>    -->
+              <img src="./gallery/paw_grey_text_pink.jpg" alt="" style="height:150px;">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="./gallery/paw_grey_text_red.png" class="thumbnail">
+              <img src="./gallery/paw_grey_text_red.png" alt="" style="height:150px;">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="./gallery/tile_large_brown_aqua.png" class="thumbnail">   
+              <img src="./gallery/tile_large_brown_aqua.png" alt="" style="height:150px;">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -116,6 +186,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
     <script src="previewer.js"></script>
   </body>
   </html>
