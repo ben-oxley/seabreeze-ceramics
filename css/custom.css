@@ -6,9 +6,18 @@ body {
   text-align: center;
 }
 
-.previewWindow{
-	  padding: 40px 15px;
+.overlay {
+    position: absolute;
+}
+
+
+#previewWindow{
+	  padding: 0px 0px;
   text-align: left;
+      position: relative;
+    border: 1px solid black;
+    width: 324px;
+    height: 324px;
 }
 
 .selectors{
@@ -18,12 +27,15 @@ body {
 
 #content{
   margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #project_row_left{
   max-width:600px;
   min-width: 300px;
   margin: 0px auto;
+  align: center;
   float: left;
 }
 
@@ -31,6 +43,7 @@ body {
   max-width:600px; 
   min-width: 300px;
   margin: 0px auto;
+  align: center;
   float: right;
 
 }
