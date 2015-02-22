@@ -13,7 +13,7 @@ body {
 input[type="radio"]:before,.radio input[type="radio"]:before,.radio-inline input[type="radio"]:before{
   position:absolute;
   left:0;top:0;
-  background-color:#6a4317;
+  background-color: rgba(10,10,10,0.4);
   -webkit-transform:scale(0);
   -ms-transform:scale(0);
   -o-transform:scale(0);
@@ -23,8 +23,43 @@ input[type="radio"]:before,.radio input[type="radio"]:before,.radio-inline input
 input[type="radio"]:after,.radio input[type="radio"]:after,.radio-inline input[type="radio"]:after{
   border:2px solid #ff0000;
 }*/
-#optionsRadios2:after{
-  border:4px solid #e8cb96;
+#creamRadio:after{
+  border:2px solid #666666;
+  background-color: #e8cb96;
+}
+
+#greyRadio:after{
+  border:2px solid #666666;
+  background-color: #919391;
+}
+
+#brownRadio:after{
+  border:2px solid #666666;
+  background-color: #613719;
+}
+
+#blueRadio:after{
+  border:2px solid #666666;
+  background-color: #48a5e0;
+}
+
+#lilacRadio:after{
+  border:2px solid #666666;
+  background-color: #c4a2e0;
+}
+
+#pineRadio:after{
+  border:2px solid #666666;
+  background-color: #e0be82;
+}
+#blackRadio:after{
+  border:2px solid #666666;
+  background-color: #2e2522;
+}
+
+#whiteRadio:after{
+  border:2px solid #666666;
+  background-color: #fcf0ed;
 }
 
 
