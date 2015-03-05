@@ -9,6 +9,7 @@
 
  <!-- Custom styles for this template -->
  <link href="css/custom.css" rel="stylesheet">
+ <link rel="stylesheet" href="src/css/swipebox.css">
 
  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,10 +58,10 @@
 
       <p>The process is simple!
         <ul>
-          <li>We post you out a kit in a prepaid return postage box. 
-          <li>You get your animals pawprint using the tile.
-          <li>Send us back the kit in the prepaid envelope.
-          <li>We'll make a beautiful tile of your dog/cat/rabbit/bird's pawprint!
+          <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> We post you out a kit in a prepaid return postage box. 
+          <li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> You get your animals pawprint using the tile.
+          <li><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Send us back the kit in the prepaid envelope.
+          <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> We'll make a beautiful tile of your dog/cat/rabbit/bird's pawprint!
         </ul></p>
         <p>
         The kit contains a special art dough to get the imprint of your animals paw, instructions on how to take the imprint and an order form for you to choose the colours and text for your tile.
@@ -69,9 +70,11 @@
     </div>
 
     <div id="previewBox">
-      <a name="previewer"></a>
-       <h1>Tile Previewer</h1>
-      
+      <div class="row row-centered">
+        <a name="previewer"></a>
+         <h1>Tile Previewer</h1>
+      </div>
+  
     <div id="previewWindow" class="col-xs-12 col-md-6" class="previewWindow" class="project_window">
       <div id="frameForeground"><img src="./images/frame_white_500.png" class="overlay"></div>
       <div id="pawForeground" ><img src="./images/paw_brown.png" class="overlay"></div>
@@ -128,6 +131,12 @@
             </div>
           </div>
           <div id="selectors" class="col-xs-12 col-md-6" class="selectors" class="project_window">
+            <div id="frameNone" class="radio">
+              <label>
+                <input type="radio" name="frameRadios" id="noneRadio" value="none">
+                No Frame
+              </label>
+            </div>
             <div id="framePine" class="radio">
               <label>
                 <input type="radio" name="frameRadios" id="pineRadio" value="natural">
@@ -147,7 +156,15 @@
               </label>
             </div>
           </div>
+        <div class="row row-centered">
         </div>
+          <div class="row row-centered">
+            <div class="col-lg-12 col-centered">
+              <div id="paypalLink"> 
+            </div>
+          </div>  
+        </div>
+      </div>
 
 
 
@@ -160,29 +177,31 @@
       <h1>Gallery</h1>
       <p class="lead"> Seabreeze Ceramics is a small, family run business specialising in personalised ceramic gifts and unique paw print tiles of your pets.</p>
     </div>
-      <div class="container">  
-          <div class="row">
-       
-            <a href="./gallery/tile_group_photo.jpg" class="thumbnail">
-              <img src="./gallery/tile_group_photo.jpg" alt="" style="height:300px;">
+      <div class="gallery-wrapper">  
+          <div class="row row-centered">
+            <div class="col-lg-2 col-lg-offset-3 col-centered">
+            
+            <a href="./gallery/tile_group_photo.jpg" class="swipebox">
+              <img src="./gallery/tile_group_photo.jpg" alt="" style="height:300px;" class="gallery-wrapper">
             </a>
            
           </div>  
-        <div class="row">
-          <div class="col-md-4">
-            <a href="./gallery/paw_brown_text_green_b.jpg" class="thumbnail">
+        </div>
+        <div class="row row-centered">
+          <div class="col-xs-4 col-centered">
+            <a href="./gallery/paw_brown_text_green_b.jpg" class="swipebox">
               <!--<p>Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.</p>    -->
-              <img src="./gallery/paw_brown_text_green_b.jpg" alt="" style="height:150px;">
+              <img src="./gallery/paw_brown_text_green_b.jpg" alt="" style="height:150px;" class="gallery-wrapper">
             </a>
           </div>
-          <div class="col-md-4">
-            <a href="./gallery/paw_cream_text_blue.jpg_b" class="thumbnail">
-              <img src="./gallery/paw_cream_text_blue_b.jpg" alt="" style="height:150px;">
+          <div class="col-xs-4 col-centered">
+            <a href="./gallery/paw_cream_text_blue_b.jpg" class="swipebox">
+              <img src="./gallery/paw_cream_text_blue_b.jpg" alt="" style="height:150px;" class="gallery-wrapper">
             </a>
           </div>
-          <div class="col-md-4">
-            <a href="./gallery/paw_cream_text_lilac_b.jpg" class="thumbnail">   
-              <img src="./gallery/paw_cream_text_lilac_b.jpg" alt="" style="height:150px;">
+          <div class="col-xs-4 col-centered">
+            <a href="./gallery/paw_cream_text_lilac_b.jpg" class="swipebox">   
+              <img src="./gallery/paw_cream_text_lilac_b.jpg" alt="" style="height:150px;" class="gallery-wrapper">
             </a>
           </div>
         </div>
@@ -196,5 +215,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <script src="previewer.js"></script>
+    <script src="src/js/jquery.swipebox.js"></script>
+    <script type="text/javascript">
+      ;( function( $ ) {
+
+        $( '.swipebox' ).swipebox();
+
+      } )( jQuery );
+    </script>
   </body>
   </html>
