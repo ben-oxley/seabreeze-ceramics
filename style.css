@@ -15,18 +15,17 @@ License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike
 body{
 	margin: 0;
 	min-width: 980px;
-	padding: 0;
+	padding: 0px;
 }
 
 p{
-	margin: 50px 50px 50px 50px;
+	margin: 20px 20px 20px 20px;
 }
 
 p, ul{
 	font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size-adjust:0.488;
 	font-weight:200;
-	margin: 20px 20px 20px 20px;
 	font-style:normal;
 }
 
@@ -36,11 +35,10 @@ img{
 
 h1, #pixels{
 	font-family:"Museo 900", Verdana, serif;
-	color: #4d96cf;
+	color: black;
 	font-size-adjust:0.40;
 	font-weight:700;
 	font-style:normal;
-	margin: 20px 20px 20px 20px;
 }
 
 h2{
@@ -49,7 +47,6 @@ h2{
 	font-weight:500;
 	font-style:normal;
 	color: black;
-	margin: 20px 20px 20px 20px;
 }
 
 #header h1, #pixels{
@@ -80,19 +77,6 @@ h2{
 
 #nav li{
 	margin: 0 0 15px 0;
-
-}
-
-#nav a{
-	font-family:"Museo 900", Verdana, serif;
-	color: white;
-	font-size-adjust:0.40;
-	font-style:normal;
-	text-decoration: none;
-}
-
-#nav a:hover{
-	color:black;
 }
 
 #header, #intro, #second{
@@ -100,23 +84,20 @@ h2{
 }
 
 #intro{
-	background:url(./gallery/4.jpg) 50% 0 no-repeat fixed;
-	background-size:cover;
-	color: #6b6566;
-	height: 700px;
-	margin: 10 auto;
-	padding: 10;
-
+	background:url(./images/IMG_0847.JPG) 50% 0 no-repeat fixed;
+	color: black;
+	height: 600px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 #second{
-	background: url(./gallery/6.jpg) 50% 0 no-repeat fixed;
-	background-size:cover;
-	color: #6b6566;
-	height: 500px;
-	margin: 10 auto;
+	background: url(./images/4.JPG) 50% 0 no-repeat fixed;
+	color: black;
+	height: 800px;
+	margin: 0 auto;
 	overflow: hidden;
-	padding: 10;
+	padding: 0;
 }
 
 /*#second .bg{
@@ -130,15 +111,14 @@ h2{
 }*/
 
 #third{
-	background: url(./gallery/2.jpg) 50% 0 no-repeat fixed;
-	background-size:cover;
-	color: #6b6566;
-	height: 300px;
+	background: url(./images/IMG_1119.JPG) 50% 0 no-repeat fixed;
+	color: black;
+	height: 650px;
 	padding: 100px 0 0 0;
 }
 
 #fifth{
-	background: url(./gallery/5.jpg) 50% 0 no-repeat fixed;
+	background: url(./images/20130523_214045.jpg) 50% 0 no-repeat fixed;
 	background-size:cover;
 	height: 400px;
 	margin: 0 auto;
@@ -153,7 +133,7 @@ h2{
 }
 
 .story .float-left, .story .float-right{
-	padding: 100px 0 0 0;
+	padding: 50px 20 20 20;
 	position: relative;
 	width: 500px;
 	/*background: #efefef;*/
@@ -163,8 +143,7 @@ h2{
 	/*opacity: 0.8;*/
   background:rgb(239,239,239);
 	background: transparent\9;
-	background:rgba(239,239,239,0.8);
-
+	background:rgba(239,239,239,0.4);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66efefef,endColorstr=#66efefef
 }
 .story .float-left, .story .float-right:nth-child(n) {
