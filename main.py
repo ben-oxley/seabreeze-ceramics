@@ -31,7 +31,7 @@ def pull_payments():
 		# newStringOfResults += str(paymentEntry.payer.payer_info.shipping_address.line1)
 		# newStringOfResults += str(paymentEntry.payer.payer_info.shipping_address.postal_code)
 		newStringOfResults += "<br>"	
-	return newStringOfResults
+	return jsonify(result=newStringOfResults)
 
 @app.route('/paypalpayments')
 def getAllPayments():
@@ -43,7 +43,7 @@ def getAllPayments():
 
 	# Get List of Payments
 	payment_history = paypalrestsdk.Payment.all({"count": 10})
-	return str(payment_history.payments)
+	return payment_history
 
 @app.route('/paypal/')
 def showPayments():

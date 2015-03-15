@@ -46,15 +46,6 @@
     <div class="starter-template">
       <h1>Seabreeze Ceramics</h1>
       <div class="text-body"> 
-        <p class = "lead">
-
-        <h1>jQuery Example</h1>
-        <p>
-          <input type="text" size="5" name="a"> +
-          <input type="text" size="5" name="b"> =
-          <span id="result">?</span>
-        <p><a href=# id="calculate">calculate server side</a>
-        </p>
       <p class="lead"> 
         <div id="textLoadArea">
         <i class="fa fa-spinner fa-spin"> </i> Loading Paypal Content
@@ -76,25 +67,8 @@
     <script type="text/javascript">
  $(document).ready(function () {
       $.getJSON($SCRIPT_ROOT + '/paypalexample', {}, function(data) {
-        $("#textLoadArea").html(data);
+       $('#textLoadArea').html(data.result);
       });
-    var submit_form = function(e) {
-      $.getJSON($SCRIPT_ROOT + '/_add_numbers', {
-        a: $('input[name="a"]').val(),
-        b: $('input[name="b"]').val()
-      }, function(data) {
-        $('#result').text(data.result);
-        $('input[name=a]').focus().select();
-      });
-      return false;
-    };
-    $('a#calculate').bind('click', submit_form);
-    $('input[type=text]').bind('keydown', function(e) {
-      if (e.keyCode == 13) {
-        submit_form(e);
-      }
-    });
-    $('input[name=a]').focus();
   });
 </script>
   </body>
