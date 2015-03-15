@@ -1,0 +1,21 @@
+curl -v https://api.sandbox.paypal.com/v1/payments/payment \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer A015lJwxZUadRH9HVJ0gtPuouigIrjQbiCIm4c5dpAnqoQ8' \
+-d '{
+  "intent":"sale",
+  "redirect_urls":{
+    "return_url":"http://example.com/your_redirect_url.html",
+    "cancel_url":"http://example.com/your_cancel_url.html"
+  },
+  "payer":{
+    "payment_method":"paypal"
+  },
+  "transactions":[
+    {
+      "amount":{
+        "total":"7.47",
+        "currency":"USD"
+      }
+    }
+  ]
+}'
