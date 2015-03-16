@@ -20,7 +20,7 @@ def pull_payments():
 	payment = paypalrestsdk.Payment.find("PAY-57363176S1057143SKE2HO3A")
 
 	# Get List of Payments
-	payment_history = paypalrestsdk.Payment.all({"count": 10})
+	payment_history = paypalrestsdk.Payment.all({"count": 100})
 	payment_history.payments
 	newStringOfResults = ""
 	for paymentEntry in payment_history.payments:
@@ -30,7 +30,7 @@ def pull_payments():
 		# newStringOfResults += "<br>"
 		# newStringOfResults += str(paymentEntry.payer.payer_info.shipping_address.line1)
 		# newStringOfResults += str(paymentEntry.payer.payer_info.shipping_address.postal_code)
-		newStringOfResults += "<br>"	
+		newStringOfResults += "<br><br>"	
 	return jsonify(result=newStringOfResults)
 
 @app.route('/paypalpayments')
