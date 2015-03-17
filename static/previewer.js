@@ -4,32 +4,32 @@ $(document).ready(function(){
     loadPrice(true);
 	//$("#previewWindow").html($("<img>").attr("src", "./images/tile_background.png")); 
     $("#pawBrown").click(function(){
-    	 $("#pawForeground").html($("<img>").attr("src", "./images/paw_brown.png").attr("class","overlay")); 
+    	 $("#pawForeground").html($("<img>").attr("src", "./images/paw_brown.png").attr("class","overlayPaw")); 
     });
     $("#pawCream").click(function(){
-    	 $("#pawForeground").html($("<img>").attr("src", "./images/paw_cream.png").attr("class","overlay")); 
+    	 $("#pawForeground").html($("<img>").attr("src", "./images/paw_cream.png").attr("class","overlayPaw")); 
     });
     $("#pawGrey").click(function(){
-    	 $("#pawForeground").html($("<img>").attr("src", "./images/paw_grey.png").attr("class","overlay")); 
+    	 $("#pawForeground").html($("<img>").attr("src", "./images/paw_grey.png").attr("class","overlayPaw")); 
     });
     $("#textLilac").click(function(){
-         $("#textForeground").html($("<img>").attr("src", "./images/text_lilac.png").attr("class","overlay")); 
+         $("#textForeground").html($("<img>").attr("src", "./images/text_lilac.png").attr("class","overlayText")); 
     });
     $("#textBlue").click(function(){
-         $("#textForeground").html($("<img>").attr("src", "./images/text_blue.png").attr("class","overlay")); 
+         $("#textForeground").html($("<img>").attr("src", "./images/text_blue.png").attr("class","overlayText")); 
     });
     $("#textGrey").click(function(){
-         $("#textForeground").html($("<img>").attr("src", "./images/text_grey.png").attr("class","overlay")); 
+         $("#textForeground").html($("<img>").attr("src", "./images/text_grey.png").attr("class","overlayText")); 
     });
     $("#textBrown").click(function(){
-         $("#textForeground").html($("<img>").attr("src", "./images/text_brown.png").attr("class","overlay")); 
+         $("#textForeground").html($("<img>").attr("src", "./images/text_brown.png").attr("class","overlayText")); 
     });
     $("#framePine").click(function(){
-         $("#frameForeground").html($("<img>").attr("src", "./images/frame_pine_500.png").attr("class","overlay")); 
+         $("#frameForeground").html($("<img>").attr("src", "./images/frame_pine_500.png").attr("class","overlayFrame")); 
         loadPrice(true);
     });
     $("#frameBlack").click(function(){
-         $("#frameForeground").html($("<img>").attr("src", "./images/frame_black_500.png").attr("class","overlay")); 
+         $("#frameForeground").html($("<img>").attr("src", "./images/frame_black_500.png").attr("class","overlayFrame")); 
         loadPrice(true);
     });
     $("#frameNone").click(function(){
@@ -37,8 +37,35 @@ $(document).ready(function(){
          loadPrice(false);
     });
     $("#frameWhite").click(function(){
-         $("#frameForeground").html($("<img>").attr("src", "./images/frame_white_500.png").attr("class","overlay")); 
+         $("#frameForeground").html($("<img>").attr("src", "./images/frame_white_500.png").attr("class","overlayFrame")); 
          loadPrice(true);
+    });
+    $("#bgApple").click(function(){
+         $("#bgCard").html($("<img>").attr("src", "./images/background_apple.jpg").attr("class","backgroundCard")); 
+    });
+    $("#bgAqua").click(function(){
+         $("#bgCard").html($("<img>").attr("src", "./images/background_aqua.jpg").attr("class","backgroundCard")); 
+    });
+    $("#bgCream").click(function(){
+         $("#bgCard").html($("<img>").attr("src", "./images/background_cream.jpg").attr("class","backgroundCard")); 
+    });
+    $("#bgCustard").click(function(){
+         $("#bgCard").html($("<img>").attr("src", "./images/background_custard.jpg").attr("class","backgroundCard")); 
+    });
+    $("#bgGrey").click(function(){
+         $("#bgCard").html($("<img>").attr("src", "./images/background_grey.jpg").attr("class","backgroundCard")); 
+    });
+    $("#bgLilac").click(function(){
+         $("#bgCard").html($("<img>").attr("src", "./images/background_lilac.jpg").attr("class","backgroundCard")); 
+    });
+    $("#bgBlue").click(function(){
+         $("#bgCard").html($("<img>").attr("src", "./images/background_pale_blue.jpg").attr("class","backgroundCard")); 
+    });
+    $("#bgPink").click(function(){
+         $("#bgCard").html($("<img>").attr("src", "./images/background_pink.jpg").attr("class","backgroundCard")); 
+    });
+    $("#bgPurple").click(function(){
+         $("#bgCard").html($("<img>").attr("src", "./images/background_purple.jpg").attr("class","backgroundCard")); 
     });
 
 });

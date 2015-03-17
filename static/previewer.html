@@ -8,7 +8,7 @@
  <link href="css/bootstrap.min.css" rel="stylesheet">
  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
  <!-- Custom styles for this template -->
- <link href="css/custom.css" rel="stylesheet">
+ <link href="css/previewer.css" rel="stylesheet">
  <link rel="stylesheet" href="src/css/swipebox.css">
 
  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -76,15 +76,18 @@
       </div>
   
     <div id="previewWindow" class="col-xs-12 col-md-6" class="previewWindow" class="project_window">
-      <div id="frameForeground"><img src="./images/frame_white_500.png" class="overlay"></div>
-      <div id="pawForeground" ><img src="./images/paw_brown.png" class="overlay"></div>
-      <div id="textForeground" ><img src="./images/text_blue.png" class="overlay"></div>
+      <div id="frameForeground"><img src="./images/frame_white_500.png" class="overlayFrame"></div>
+      <img id="tileBackground" class="overlayTile" src="./images/tile_background.png"/>
+      <div id="pawForeground" ><img src="./images/paw_brown.png" class="overlayPaw"></div>
+      <div id="textForeground" ><img src="./images/text_blue.png" class="overlayText"></div>
               <!--<img id="pawForeground" class="overlay" src="./images/paw_blue.png"/>
               <img id="station_B" class="overlay" src="./images/paw_red.png"/>-->
 
-      <img id="tileBackground" class="previewImages" src="./images/tile_background.png"/>
+      
+       <div id="bgCard" ><img id="cardBackground" class="backgroundCard" src="./images/background_cream.jpg"/></div>
     </div>
             <div id="selectors" class="col-xs-12 col-md-6" class="selectors" class="project_window">
+              <p>Paw Colours</p>
              <div id="pawBrown" class="radio">
               <label>
                 <input type="radio" name="pawRadios" id="brownRadio" value="brown" checked>
@@ -105,6 +108,7 @@
             </div>
           </div>
           <div id="selectors" class="col-xs-12 col-md-6" class="selectors" class="project_window">
+            <p>Text Colours</p>
             <div id="textGrey" class="radio">
               <label>
                 <input type="radio" name="textRadios" id="greyRadio" value="grey">
@@ -131,6 +135,7 @@
             </div>
           </div>
           <div id="selectors" class="col-xs-12 col-md-6" class="selectors" class="project_window">
+            <p>Frame Colours</p>
             <div id="frameNone" class="radio">
               <label>
                 <input type="radio" name="frameRadios" id="noneRadio" value="none">
@@ -153,6 +158,63 @@
               <label>
                 <input type="radio" name="frameRadios" id="whiteRadio" value="white" checked>
                 White Frame
+              </label>
+            </div>
+          </div>
+           <div id="selectors" class="col-xs-12 col-md-6" class="selectors" class="project_window">
+            <p>Background Colours</p>
+            <div id="bgApple" class="radio">
+              <label>
+                <input type="radio" name="bgRadios" id="appleRadio" value="apple">
+                Apple
+              </label>
+            </div>
+            <div id="bgAqua" class="radio">
+              <label>
+                <input type="radio" name="bgRadios" id="aquaRadio" value="aqua">
+                Aqua
+              </label>
+            </div>
+            <div id="bgCream" class="radio">
+              <label>
+                <input type="radio" name="bgRadios" id="creamRadio" value="cream">
+                Cream
+              </label>
+            </div>
+            <div id="bgCustard" class="radio">
+              <label>
+                <input type="radio" name="bgRadios" id="custardRadio" value="custard">
+                Custard
+              </label>
+            </div>
+            <div id="bgGrey" class="radio">
+              <label>
+                <input type="radio" name="bgRadios" id="greyRadio" value="grey">
+                Grey
+              </label>
+            </div>
+            <div id="bgLilac" class="radio">
+              <label>
+                <input type="radio" name="bgRadios" id="lilacRadio" value="lilac">
+                Lilac
+              </label>
+            </div>
+            <div id="bgBlue" class="radio">
+              <label>
+                <input type="radio" name="bgRadios" id="blueRadio" value="paleBlue">
+                Pale Blue
+              </label>
+            </div>
+            <div id="bgPink" class="radio">
+              <label>
+                <input type="radio" name="bgRadios" id="pinkRadio" value="pink">
+                Pink
+              </label>
+            </div>
+            <div id="bgPurple" class="radio">
+              <label>
+                <input type="radio" name="bgRadios" id="purpleRadio" value="purple">
+                Purple
               </label>
             </div>
           </div>

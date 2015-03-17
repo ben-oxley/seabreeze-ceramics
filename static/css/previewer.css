@@ -1,9 +1,200 @@
-.body{
-	background-color: ##383838;
-	
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 0px 15px;
+  text-align: center;
 }
 
-.overlay {
-    display: none;
-    position: absolute;
+.text-body{
+   text-align: left;
+}
+
+.gallery-wrapper {
+  margin:10px;
+  border:1px #ccc solid;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+input[type="radio"]:before,.radio input[type="radio"]:before,.radio-inline input[type="radio"]:before{
+  position:absolute;
+  left:0;top:0;
+  background-color: rgba(10,10,10,0.4);
+  -webkit-transform:scale(0);
+  -ms-transform:scale(0);
+  -o-transform:scale(0);
+  transform:scale(0)
+}
+/*
+input[type="radio"]:after,.radio input[type="radio"]:after,.radio-inline input[type="radio"]:after{
+  border:2px solid #ff0000;
+}*/
+#creamRadio:after{
+  border:2px solid #666666;
+  background-color: #e8cb96;
+}
+
+#pinkRadio:after{
+  border:2px solid #666666;
+  background-color: #fec9eb;
+}
+
+#purpleRadio:after{
+  border:2px solid #666666;
+  background-color: #c750fe;
+}
+
+#appleRadio:after{
+  border:2px solid #666666;
+  background-color:#95fe81;
+}
+
+#custardRadio:after{
+  border:2px solid #666666;
+  background-color:#f5fe7b;
+}
+
+#aquaRadio:after{
+  border:2px solid #666666;
+  background-color:#77b2fe;
+}
+
+#greyRadio:after{
+  border:2px solid #666666;
+  background-color: #919391;
+}
+
+#brownRadio:after{
+  border:2px solid #666666;
+  background-color: #613719;
+}
+
+#blueRadio:after{
+  border:2px solid #666666;
+  background-color: #48a5e0;
+}
+
+#lilacRadio:after{
+  border:2px solid #666666;
+  background-color: #c4a2e0;
+}
+
+#pineRadio:after{
+  border:2px solid #666666;
+  background-color: #e0be82;
+}
+#blackRadio:after{
+  border:2px solid #666666;
+  background-color: #2e2522;
+}
+
+#whiteRadio:after{
+  border:2px solid #666666;
+  background-color: #fcf0ed;
+}
+
+
+.backgroundCard{
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlayTile{
+  padding: 80px 80px 80px 80px;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+}
+
+.overlayPaw {
+  padding: 60px 60px 60px 60px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+ 
+}
+.overlayText {
+  padding: 60px 60px 60px 60px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+.overlayFrame {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+#previewBox {
+  padding: 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.previewWindow{
+	padding: 0px 0px;
+  /*text-align: left;*/
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+#selectors{
+	 padding: 10px 10px;
+	 text-align: left;
+   width: 200px;
+}
+
+#content{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+#project_row_left{
+  max-width:600px;
+  min-width: 300px;
+  margin: 0px auto;
+  align: center;
+  float: left;
+}
+
+#project_row_right{
+  max-width:600px; 
+  min-width: 300px;
+  margin: 0px auto;
+  align: center;
+  float: right;
+
+}
+
+.project_window{
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  margin-left: 0px;
+}
+
+#imgBlurred{
+	filter: blur(200px);
 }
