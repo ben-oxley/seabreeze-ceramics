@@ -1,4 +1,4 @@
-var frame = false;
+var frame = true;
 
 $(document).ready(function(){
     loadPrice(true);
@@ -26,19 +26,19 @@ $(document).ready(function(){
     });
     $("#framePine").click(function(){
          $("#frameForeground").html($("<img>").attr("src", "./images/frame_pine_500.png").attr("class","overlayFrame")); 
-        loadPrice(true);
+        changeFraming(true);
     });
     $("#frameBlack").click(function(){
          $("#frameForeground").html($("<img>").attr("src", "./images/frame_black_500.png").attr("class","overlayFrame")); 
-        loadPrice(true);
+        changeFraming(true);
     });
     $("#frameNone").click(function(){
          $("#frameForeground").html($("")); 
-         loadPrice(false);
+         changeFraming(false);
     });
     $("#frameWhite").click(function(){
          $("#frameForeground").html($("<img>").attr("src", "./images/frame_white_500.png").attr("class","overlayFrame")); 
-         loadPrice(true);
+         changeFraming(true);
     });
     $("#bgApple").click(function(){
          $("#bgCard").html($("<img>").attr("src", "./images/background_apple.jpg").attr("class","backgroundCard")); 
@@ -69,6 +69,17 @@ $(document).ready(function(){
     });
 
 });
+
+function changeFraming(value){
+    if (value === frame){
+    } else if (value===true){
+         $("#bgCard").html($("<img>").attr("src", "./images/background_cream.jpg").attr("class","backgroundCard")); 
+    } else if (value===false) {
+        $("#bgCard").html($("<div>").attr("class","backgroundCard")); 
+    }
+    frame = value;
+    loadPrice(frame);
+}
 
 function loadPrice(frame){
     if(frame === false){
