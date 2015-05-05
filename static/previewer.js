@@ -1,7 +1,7 @@
 var frame = true;
 
 $(document).ready(function(){
-    loadPrice(true);
+    loadPrice();
 	//$("#previewWindow").html($("<img>").attr("src", "./images/tile_background.png")); 
     $("#pawBrown").click(function(){
     	 $("#pawForeground").html($("<img>").attr("src", "./images/paw_brown.png").attr("class","overlayPaw")); 
@@ -78,41 +78,46 @@ function changeFraming(value){
         $("#bgCard").html($("<div>").attr("class","backgroundCard")); 
     }
     frame = value;
-    loadPrice(frame);
+    loadPrice();
 }
-
-function loadPrice(frame){
-    if(frame === false){
-            $("#paypalLink").html($(" <div class=\"col-lg-2\"><p>Small Unframed - £49.50</p>\
-            <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\
-            <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
-            <input type=\"hidden\" name=\"hosted_button_id\" value=\"U5LTXQQSBN5XC\">\
-            <input type=\"image\" src=\"https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal – The safer, easier way to pay online.\">\
-            <img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\">\
-            </form></div>\
-            <div class=\"col-lg-2\">\
-            <p>Large Unframed - £59.50</p>\
-            <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\
-            <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
-            <input type=\"hidden\" name=\"hosted_button_id\" value=\"RJ5G6KP4XUHKS\">\
-            <input type=\"image\" src=\"https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal – The safer, easier way to pay online.\">\
-            <img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\">\
-            </form></div>"));
-    } else if (frame === true) {
-            $("#paypalLink").html($("<div class=\"col-lg-2\"><p>Small Framed - £59.50</p>\
-            <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\
-            <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
-            <input type=\"hidden\" name=\"hosted_button_id\" value=\"6PUG3BBUSSMJC\">\
-            <input type=\"image\" src=\"https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal – The safer, easier way to pay online.\">\
-            <img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\">\
-            </form></div>\
-            <div class=\"col-lg-2\">\
-            <p>Large Framed - £64.50</p>\
-            <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\
-            <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
-            <input type=\"hidden\" name=\"hosted_button_id\" value=\"RCTK9PPD7YMLA\">\
-            <input type=\"image\" src=\"https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal – The safer, easier way to pay online.\">\
-            <img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\">\
-            </form></div>"));
-    }
+//<i class=\"fa fa-paypal\" style=\"color:CornflowerBlue  \"> Pay with PayPal</i>\
+//<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal – The safer, easier way to pay online.\">\
+//<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\">\
+function loadPrice(){
+        $("#paypalLink").html($("\
+        <div class=\"col-lg-2\"><p>Small Unframed - £49.50</p>\
+        <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\
+        <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
+        <input type=\"hidden\" name=\"hosted_button_id\" value=\"U5LTXQQSBN5XC\">\
+        <button type=\"submit\" class=\"btn btn-primary\">\
+        <i class=\"fa fa-paypal\" \"> Pay with PayPal</i>\
+        </button>\
+        </form></div>\
+        <div class=\"col-lg-2\">\
+        <p>Large Unframed - £59.50</p>\
+        <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\
+        <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
+        <input type=\"hidden\" name=\"hosted_button_id\" value=\"RJ5G6KP4XUHKS\">\
+        <button type=\"submit\" class=\"btn btn-primary\">\
+        <i class=\"fa fa-paypal\" \"> Pay with PayPal</i>\
+        </button>\
+        </form></div>\
+        <div class=\"col-lg-2\"><p>Small Framed - £59.50</p>\
+        <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\
+        <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
+        <input type=\"hidden\" name=\"hosted_button_id\" value=\"6PUG3BBUSSMJC\">\
+        <button type=\"submit\" class=\"btn btn-primary\">\
+        <i class=\"fa fa-paypal\" \"> Pay with PayPal</i>\
+        </button>\
+        </form></div>\
+        <div class=\"col-lg-2\">\
+        <p>Large Framed - £64.50</p>\
+        <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\
+        <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
+        <input type=\"hidden\" name=\"hosted_button_id\" value=\"RCTK9PPD7YMLA\">\
+        <button type=\"submit\" class=\"btn btn-primary\">\
+        <i class=\"fa fa-paypal\" \"> Pay with PayPal</i>\
+        </button>\
+        </form></div>\
+        "));
 }

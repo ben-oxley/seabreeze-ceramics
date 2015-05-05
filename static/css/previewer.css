@@ -12,10 +12,10 @@ body {
 
 .gallery-wrapper {
   margin:10px;
-  border:1px #ccc solid;
-  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+ /*   border:1px #ccc solid;
+-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
 }
 
 /* centered columns styles */
