@@ -12,6 +12,21 @@ $(document).ready(function(){
     $("#pawGrey").click(function(){
     	 $("#pawForeground").html($("<img>").attr("src", "./images/paw_grey.png").attr("class","overlayPaw")); 
     });
+    $("#pawTaupe").click(function(){
+         $("#pawForeground").html($("<img>").attr("src", "./images/paw_taupe.png").attr("class","overlayPaw")); 
+    });
+    $("#pawBiscuit").click(function(){
+         $("#pawForeground").html($("<img>").attr("src", "./images/paw_biscuit.png").attr("class","overlayPaw")); 
+    });
+    $("#pawChocolate").click(function(){
+         $("#pawForeground").html($("<img>").attr("src", "./images/paw_chocolate.png").attr("class","overlayPaw")); 
+    });
+    $("#pawGinger").click(function(){
+         $("#pawForeground").html($("<img>").attr("src", "./images/paw_ginger.png").attr("class","overlayPaw")); 
+    });
+    $("#pawLatte").click(function(){
+         $("#pawForeground").html($("<img>").attr("src", "./images/paw_latte.png").attr("class","overlayPaw")); 
+    });
     $("#textLilac").click(function(){
          $("#textForeground").html($("<img>").attr("src", "./images/text_lilac.png").attr("class","overlayText")); 
     });
@@ -90,7 +105,7 @@ function loadPrice(){
         <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
         <input type=\"hidden\" name=\"hosted_button_id\" value=\"U5LTXQQSBN5XC\">\
         <button type=\"submit\" class=\"btn btn-primary\">\
-        <i class=\"fa fa-paypal\" \"> Pay with PayPal</i>\
+        <i class=\"fa fa-paypal\"> Buy with PayPal</i>\
         </button>\
         </form></div>\
         <div class=\"col-lg-2\">\
@@ -99,7 +114,7 @@ function loadPrice(){
         <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
         <input type=\"hidden\" name=\"hosted_button_id\" value=\"RJ5G6KP4XUHKS\">\
         <button type=\"submit\" class=\"btn btn-primary\">\
-        <i class=\"fa fa-paypal\" \"> Pay with PayPal</i>\
+        <i class=\"fa fa-paypal\"> Buy with PayPal</i>\
         </button>\
         </form></div>\
         <div class=\"col-lg-2\"><p>Small Framed - £59.50</p>\
@@ -107,7 +122,7 @@ function loadPrice(){
         <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
         <input type=\"hidden\" name=\"hosted_button_id\" value=\"6PUG3BBUSSMJC\">\
         <button type=\"submit\" class=\"btn btn-primary\">\
-        <i class=\"fa fa-paypal\" \"> Pay with PayPal</i>\
+        <i class=\"fa fa-paypal\"> Buy with PayPal</i>\
         </button>\
         </form></div>\
         <div class=\"col-lg-2\">\
@@ -116,7 +131,7 @@ function loadPrice(){
         <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\
         <input type=\"hidden\" name=\"hosted_button_id\" value=\"RCTK9PPD7YMLA\">\
         <button type=\"submit\" class=\"btn btn-primary\">\
-        <i class=\"fa fa-paypal\" \"> Pay with PayPal</i>\
+        <i class=\"fa fa-paypal\"> Buy with PayPal</i>\
         </button>\
         </form></div>\
         "));

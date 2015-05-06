@@ -49,6 +49,31 @@ input[type="radio"]:after,.radio input[type="radio"]:after,.radio-inline input[t
   background-color: #e8cb96;
 }
 
+#biscuitRadio:after{
+  border:2px solid #666666;
+  background-color: #c5bd5a;
+}
+
+#chocolateRadio:after{
+  border:2px solid #666666;
+  background-color: #654a36;
+}
+
+#gingerRadio:after{
+  border:2px solid #666666;
+  background-color: #bb842d;
+}
+
+#latteRadio:after{
+  border:2px solid #666666;
+  background-color: #d2bf9e;
+}
+
+#taupeRadio:after{
+  border:2px solid #666666;
+  background-color: #d2c2bc;
+}
+
 #pinkRadio:after{
   border:2px solid #666666;
   background-color: #fec9eb;
