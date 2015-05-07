@@ -1,79 +1,321 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>jQuery Parallax Plugin Demo</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#nav').localScroll(800);
+<html lang="en">
 
-	//.parallax(xPosition, speedFactor, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#intro').parallax("50%", 0.1);
-	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.4);
-	$('#third').parallax("50%", 0.3);
-  $('#third').parallax("50%", 0.3);
-})
-</script>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Seabreeze Ceramics</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-	<ul id="nav">
-		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	</ul>
+<body id="page-top">
 
-	<div id="intro">
-		<div class="story">
-	    	<div class="float-left">
-			<h1>Ben Oxley</h1>
-			<p><center>
-			Mechanical Engineering MEng – University of Southampton
-			<br>- GitHub – Twitter -
-<br><br>
-			- IRC – benoxley-<br>
-			- @Freenode – #apexhab – <br>#highaltitude -<br>
-			-BTC- <br>1GaQYxWcPzNsmhaSW6bRJEjFAJKDxcs3y3<br>
-			-dogecoin-<br>D7KbgY2YinN6UmHnubJKtybgK2TiCJ5FfB<br>
-			</center>
-		</p>
-	    </div> <!--.story-->
-	</div> <!--#intro-->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Seabreeze Ceramics</a>
+            </div>
 
-	<div id="second">
-		<div class="story"><div class="bg"></div>
-	    	<div class="float-right">
-	            <h2>Background</h2>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Our Products</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-						</div>
-	    </div> <!--.story-->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                 <img src="img/colourlogo.png" width="50%" alt="Seabreeze Ceramics">
+                <hr>
+                <p class="lead"> Have your pets paw print cast in beautiful ceramic to treasure for a lifetime...</p>
+        <p>Seabreeze ceramics is a business created by Gina Langridge. Gina gained a BA in Glassblowing and Ceramics from the Buckinghamshire New University and a foundation Diploma in Ceramics and Fine art from Wimbledon College of the Arts.</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-envelope wow bounceIn text-primary"></i>
+                        <h3>We Post</h3>
+                        <p class="text-muted">We post you out a kit in a prepaid postage box. </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-home wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>You Imprint</h3>
+                        <p class="text-muted">You get your animals pawprint using the tile.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-share wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>You Return</h3>
+                        <p class="text-muted">Send us back the kit in the prepaid envelope.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>We Make!</h3>
+                        <p class="text-muted">We'll make a beautiful tile of your pawprint!</p>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                     <div class="col-lg-12 col-md-12 text-left">
+                 <br><br>
+                    <p>
+                      After you have placed your order, you will receive one of our special kits within a week. It contains:
+                      <ul>
+                        <li>A piece of special dough to take your pets paw print impressions with,
+                          <li>Full instructions on how to use it and where to send it afterwards (also available here) and
+                            <li>An order form so you can customise your tile.
+                            </ul>
+                            The order form shows all the colour options that we have here on the website, so just tick the boxes under your chose options and send it back with your imprint mould.
 
-	</div> <!--#second-->
+                            The kit contains a special art dough to get the imprint of your animals paw, instructions on how to take the imprint and an order form for you to choose the colours and text for your tile.
+                          </p>
+                      </div>
+                  </div>
+                   <div class="row">
+                     <div class="col-lg-12 col-md-12 text-center">
+                    <a href="#portfolio" class="btn btn-primary btn-xl page-scroll">Get Started!</a>
+                
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<div id="third">
-		<div class="story">
-	    	<div class="float-left">
-	        	<h2>My Experience</h2>
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <div href="#" class="portfolio-box">
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Small Unframed - £49.50
+                                </div>
+                                <div class="project-name">
+                                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="U5LTXQQSBN5XC">
+                                <button type="submit" class="btn btn-primary">
+                                  <i class="fa fa-paypal"> Buy with PayPal</i>
+                                </button>
+                              </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div href="#" class="portfolio-box">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Large Unframed - £59.50
+                                </div>
+                                <div class="project-name">
+                                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="RJ5G6KP4XUHKS">
+                                <button type="submit" class="btn btn-primary">
+                                  <i class="fa fa-paypal"> Buy with PayPal</i>
+                                </button>
+                              </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div href="#" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Small Framed - £59.50
+                                </div>
+                                <div class="project-name">
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="6PUG3BBUSSMJC">
+                                <button type="submit" class="btn btn-primary">
+                                  <i class="fa fa-paypal"> Buy with PayPal</i>
+                                </button>
+                              </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div href="#" class="portfolio-box">
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Large Framed - £64.50
+                                </div>
+                                <div class="project-name">
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="RCTK9PPD7YMLA">
+                                <button type="submit" class="btn btn-primary">
+                                  <i class="fa fa-paypal"> Buy with PayPal</i>
+                                </button>
+                              </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					    </div>
-	    </div> <!--.story-->
-	</div> <!--#third-->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                 
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                     <address>
+                        <h3>Contact Details</h3>
+                        <p class="lead">Seabreeze Ceramics<br>
+                          Phone: XXX-XXX-XXXX<br>
+                          Email: seabreezeceramicsuk@gmail.com</p>
+                        </address>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:seabreezeceramicsuk@gmail.com">seabreezeceramicsuk@gmail.com</a></p>
+                </div>
+                  <div class="container">
+            <div class="row">
+            <!--<div class="col-md-12">
+              <small><i></i>Add alerts if form ok... success, else error.</i></small>
+            <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>   
+              <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
+            </div>-->
+            <form role="form" action="mailto:seabreezeceramicsuk@gmail.com" method="post" >
+              <div class="col-lg-6">
+                <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
+                <div class="form-group">
+                  <label for="InputName">Your Name</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="InputEmail">Your Email</label>
+                    <div class="input-group">
+                      <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="InputMessage">Message</label>
+                      <div class="input-group">
+                        <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                      </div>
+                      <div class="form-group">
+                        <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                        </div>
+                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                      </div>
+                    </form>
+                    <hr class="featurette-divider hidden-lg">
+                    <div class="col-lg-5 col-md-push-1">
+                     
+                      </div>
+                    </div>
 
-	<div id="fifth">
-		<div class="story">
+                  </div>
+            </div>
+        </div>
+    </section>
 
-	    
-	    </div> <!--.story-->
-	</div> <!--#fifth-->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
 </body>
+
 </html>
